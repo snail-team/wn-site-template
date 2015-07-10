@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<title><%=title%></title>
+<meta name="keywords" content="<%=keywords%>"/>
+<meta name="description" content="<%=description%>"/>
+<meta name="copyright" content="苏州蜗牛数字科技股份有限公司" />
+<meta name="gameId" content="<%=gameId%>"/>
+<meta name="front-end technicist" content="<%=frontEnd%>" />
+<meta name="cms" content="<%=cms%>" />
+<meta name="designer" content="<designer>" />
+<!--[if lt IE 9]>
+<script src="http://static.woniu.com/script/html5/html5shiv.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="http://static.woniu.com/stylesheets/base.css"/>
+</head>
+<body>
+<!-- Start 内容 -->
+<section class="main">
+
+</section>
+<!-- End 内容 -->
+<script footer='{gamename:"<=gameName>"}' src="http://static.woniu.com/script/wn/wn.min.js"></script>
+<script type="text/javascript">
+/*
+    //可通过wn.js合并加载脚本
+    var siteDomain = '<%=domain%>';
+    wn.load(['jquery','statistics'],function(){
+        wn.load(siteDomain + '/static/xxx/js/index.js');
+
+    });
+*/
+
+</script>
+<script charset="utf-8" id="wn-gamehead" login="http://www.woniu.com/account/login/?gameid=<%=gameId%>&pagename=<%=pageName%>&goto=<%=domain%>" register="http://www.woniu.com/account/register/?gameid=<%=gameId%>&pagename=<%=pageName%>&goto=<%=domain%>" src="http://www.woniu.com/include/gm_header.js"></script>
+</body>
+</html>
