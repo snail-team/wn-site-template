@@ -68,7 +68,7 @@ fis.config.set('deploy',{
 		receiver:'http://deploy.woniu.com/receiver.html', // 如果配置了receiver，fis会把文件逐个post到接收端上
 		from:'/dist/css',  //从产出的结果的dis目录下找文件
 		subOnly:false, // true上传目录从dis下一级开始不包括dis目录
-		to:'/opt/htdocs/cmsv3/cmsroot/sites/chinajoy/2014', 
+		to:'<%=root%>', 
 		//保存到远端机器的/opt/htdocs/www-imuch-com/目录下
         //这个参数会跟随post请求一起发送
 		exclude:/.*\.(?:svn|cvs|tar|rar|psd).*/  //某些后缀的文件不进行上传
