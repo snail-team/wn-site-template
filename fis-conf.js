@@ -7,7 +7,14 @@ fis.media('qa').match('dist/*', {
 });
 
 
-fis.media('production').match('dist/*', {
+fis.media('actProd').match('dist/*', {
+  deploy: fis.plugin('http-push', {
+    receiver: 'http://production.woniu.com/receiver.html', //生产环境
+    to:'<%=root%>'
+  })
+});
+
+fis.media('siteProd').match('dist/*', {
   deploy: fis.plugin('http-push', {
     receiver: 'http://production.woniu.com/receiver.html', //生产环境
     to:'<%=root%>'
