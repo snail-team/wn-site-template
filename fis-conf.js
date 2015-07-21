@@ -1,15 +1,15 @@
 
-fis.media('qa').match('*', {
+fis.media('qa').match('dist/*', {
   deploy: fis.plugin('http-push', {
-    receiver: 'http://cq.01.p.p.baidu.com:8888/receiver.php',
-    to: '/home/work/htdocs' // 注意这个是指的是测试机器的路径，而非本地机器
+    receiver: 'http://dev.woniu.com/receiver.html', // 内网环境
+    to:'<%=root%>' // 注意这个是指的是测试机器的路径，而非本地机器
   })
 });
 
 
-fis.media('production').match('src/*', {
+fis.media('production').match('dist/*', {
   deploy: fis.plugin('http-push', {
-    receiver: 'http://deploy.woniu.com/receiver.html',
+    receiver: 'http://production.woniu.com/receiver.html', //生产环境
     to:'<%=root%>'
   })
 });
