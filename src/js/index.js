@@ -1,5 +1,6 @@
 /**
- * author:''
+ * author:<%=frontEnd%>
+ * Date:<%=date%>
  */
 
 var PAGE = (function () {

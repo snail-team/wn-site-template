@@ -7,18 +7,22 @@
 <meta name="keywords" content="<%=keywords%>"/>
 <meta name="description" content="<%=description%>"/>
 <meta name="copyright" content="苏州蜗牛数字科技股份有限公司" />
-<!--designer:<%=designer%> @ f2er:<%=frontEnd%> @ cms:<%=cmser%> -->
+<!--designer:<%=designer%> @ F2E:<%=frontEnd%> @ cms:<%=cmser%> -->
 <!--[if lt IE 9]>
 <script src="http://static.woniu.com/script/html5/html5shiv.js"></script>
 <![endif]-->
 <link rel="stylesheet" type="text/css" href="http://static.woniu.com/stylesheets/base.css"/>
+<link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
 <!-- Start 内容 -->
-<div class="main">
+<div class="container clearfix">
+
+ <h1 class="wn-common-logo" logo="{name:'<%=dmPrefixName%>',type:'logoicon',size:'middle',top:'0',left:'0'}" style="position:relative"><%=title%></h1>
 
 </div>
 <!-- End 内容 -->
+<!-- 页尾、logo、加载器 -->
 <script footer='{gamename:"<%=gameName%>"}' src="http://static.woniu.com/script/wn/wn.min.js"></script>
 <script type="text/javascript">
 /*
@@ -29,8 +33,8 @@
 
     });
 */
-
 </script>
-<script charset="utf-8" id="wn-gamehead" login="http://www.woniu.com/account/login/?gameid=<%=gameId%>&pagename=<%=domain%>&goto=<%=domain%>" register="http://www.woniu.com/account/register/?gameid=<%=gameId%>&pagename=<%=domain%>&goto=<%=domain%>" src="http://www.woniu.com/include/gm_header.js"></script>
+<!-- 顶部通栏 -->
+<script charset="utf-8" id="wn-gamehead" login="http://www.woniu.com/account/login/?gameid=<%=gameId%>&pagename=<%=pageName%>-<%=curDirName%>&goto=<%=domain%>" register="http://www.woniu.com/account/register/?gameid=<%=gameId%>&pagename=<%=pageName%>&goto=<%=domain%>" src="http://www.woniu.com/include/gm_header.js"></script>
 </body>
 </html>
