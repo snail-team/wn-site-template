@@ -27,4 +27,3 @@ fis.media('siteProd').match('**', {
     to:'<%=root%>'
   })
 });
-
