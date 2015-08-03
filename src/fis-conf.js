@@ -1,4 +1,6 @@
 
+
+
 fis.media('qa').match('**', {
   deploy: fis.plugin('http-push', {
     receiver: 'http://dev.woniu.com/receiver.html', // 内网环境
@@ -8,6 +10,7 @@ fis.media('qa').match('**', {
 
 
 fis.media('actProd').match('**', {
+  domain:'<%=absRoot%>',
   deploy: fis.plugin('http-push', {
     receiver: 'http://production.woniu.com/receiver.html', //生产环境
     to:'<%=root%>'
